@@ -38,7 +38,7 @@ ARG k8s_tests=kubernetes/tests
 RUN set -ex && \
     apt-get update && \
     ln -s /lib /lib64 && \
-    apt install -y bash tini libc6 libpam-modules libnss3 && \
+    apt install -y bash tini libc6 libpam-modules krb5-user libnss3 procps nscd && \
     mkdir -p /opt/spark && \
     mkdir -p /opt/spark/work-dir && \
     touch /opt/spark/RELEASE && \

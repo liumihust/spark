@@ -16,6 +16,9 @@
 # limitations under the License.
 #
 
+# nscd start
+service nscd start &
+
 # echo commands to the terminal output
 set -ex
 
